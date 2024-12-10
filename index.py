@@ -30,7 +30,8 @@ async def scrape_and_send():
 async def main():
     while True:
         await scrape_and_send()
-        await asyncio.sleep(5 * 60 * 60)
+        await asyncio.sleep(5 * 60)
+        # await asyncio.sleep(5 * 60 * 60)
 
 if __name__ == '__main__':
     asyncio.run(main())
